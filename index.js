@@ -43,7 +43,7 @@ return totalCost
 
 function removeFromCart(item) {
 for (let b = 0; b < cart.length; b++) {
-  let cart.indexOf[b] = x 
+  let cart.indexOf[b] = x
   if (item === cart[b].itemName) {
     cart.splice(x, 1)
   }
