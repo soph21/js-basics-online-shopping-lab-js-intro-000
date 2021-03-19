@@ -57,15 +57,13 @@ for (let b = 0; b < cart.length; b++) {
 }
 
 function placeOrder(cardNumber) {
-  let cardReceived = 0
     if (cardNumber) {
       let totalCost = total()
       cart.splice(0, cart.length)
       cardReceived = 1
+      return `Your total cost is $${totalCost}, which will be charged to the card ${cardNumber}.`
     }
-    if (cardReceived ===0) {
+    else { (cardReceived ===0)
       return "Sorry, we don't have a credit card on file for you."
-  } else {
-    return `Your total cost is $${totalCost}, which will be charged to the card ${cardNumber}.`
   }
 }
