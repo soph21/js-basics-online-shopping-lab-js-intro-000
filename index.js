@@ -49,7 +49,7 @@ for (let b = 0; b < cart.length; b++) {
     itemExists = 1
   }
 }
-  if (itemExists = 0) {
+  if (itemExists === 0) {
     return "That item is not in your cart."
 } else {
   return cart
