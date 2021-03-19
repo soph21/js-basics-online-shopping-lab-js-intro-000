@@ -57,5 +57,9 @@ for (let b = 0; b < cart.length; b++) {
 }
 
 function placeOrder(cardNumber) {
+  let cardExists = 0 
+  for (let c = 0; c< cart.length; c++) {
+    if (cardNumber)
+  }
   // write your code here
 }
