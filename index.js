@@ -46,9 +46,11 @@ for (let b = 0; b < cart.length; b++) {
   let cart.indexOf[b] = x
   if (item === cart[b].itemName) {
     cart.splice(x, 1)
+  } else {
+    return "That item is not in your cart."
   }
+  return cart
 }
-  // write your code here
 }
 
 function placeOrder(cardNumber) {
