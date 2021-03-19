@@ -42,13 +42,16 @@ return totalCost
 }
 
 function removeFromCart(item) {
+let itemExists = 0
 for (let b = 0; b < cart.length; b++) {
-  let cart.indexOf[b] = x
   if (item === cart[b].itemName) {
-    cart.splice(x, 1)
-  } else {
-    return "That item is not in your cart."
+    cart.splice(b, 1)
+    itemExists = 1
   }
+}
+  if (itemExists = 0) {
+    return "That item is not in your cart."
+} else {
   return cart
 }
 }
