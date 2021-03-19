@@ -58,12 +58,10 @@ for (let b = 0; b < cart.length; b++) {
 
 function placeOrder(cardNumber) {
   let cardReceived = 0
-  for (let c = 0; c< cart.length; c++) {
     if (cardNumber) {
       cart.splice(0, cart.length)
       cardReceived = 1
     }
-  }
     if (cardReceived ===0) {
       return "Sorry, we don't have a credit card on file for you."
   } else {
